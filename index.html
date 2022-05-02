@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณค่าตัดข้าว</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>โปรแกรมคำนวณค่าตัดข้าว</h1>
+    <label>ค่าตัดต่อไร่</label>
+    <input id="combinedRate" type="number" value="500">
+    <br>
+    <br>
+    <label>ค่าลากต่อกิโลกรัม</label>
+    <input id="transpotRate" type="number" value="0.2">
+    <br>
+    <br>
+    <label>จำนวนไร่ที่ตัด</label>
+    <input id="combinedQTY" type="number">
+    <br>
+    <br>
+    <label >อยู่บ้านสันโป่ง</label>
+    <input type="checkbox" name="" id="isSanphong" >
+    <br>
+    <br>
+    <label>จำนวนน้ำหนักที่ลาก</label>
+    <input id="transpotQTY" type="number">
+    <br>
+    <br>
+    <input id="calulateBtn" type="submit" value="คำนวณ">
+    
+    <hr>
+    <br>
+    <p >คิดเป็นจำนวนเงิน</p>
+    <p>ค่าตัดคิดเป็นจำนวนเงิน <span id="spanCombinedAmount"></span> บาท</p>
+    <p>ค่าลากคิดเป็นจำนวนเงิน <span id="spanTranspotAmount"></span> บาท</p>
+    <p>รวมเป็น <span id="spanTotalAmount"></span> บาท</p>
+    
+    <input id="clearBtn" type="submit" value="ล้างการคำนวณ">
+    
+    <script src="index.js"></script>
+</body>
+</html>
